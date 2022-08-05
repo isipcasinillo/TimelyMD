@@ -1,3 +1,162 @@
-body {
-    background-color: white;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+
+
+.Nav-section {
+    top: 58.4px; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 41.37px;
+    max-width: 1423px;
+    width: 75%;
+}
+.Logo-container {
+    height: 41.37px; 
+ }
+ 
+.Nav-section ul {
+    /* position: absolute; */
+    list-style-type: none;
+    display: flex;
+
+}
+
+.Nav-section ul li {
+    font-family: 'Montserrat';
+    font-size: 20.96px;
+    height: 25px;
+    font-weight: 700;  /* needs to be bolder*/
+    color: #256C90;
+}
+
+.Nav-section ul li:not(:last-child){
+    margin-right: 45px;
+}
+
+.Nav-hamburger {
+    display: none;
+}
+
+/* ----------------------------------------------------------------- */
+
+.Hero-section {
+    width: 100%;
+    /* height: 1054px; */
+    min-height: 1054px;
+    height: auto;
+    background-color: #CEF4F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero-section-container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 1672px;
+    width: 88%;
+    
+    margin: 0 auto;
+    margin-top: 167px;
+
+}
+
+.Hero-section-container-section:first-child{
+    margin-right: 87.8px;
+}
+
+.Hero-title-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Hero-section-timeto {
+    font-family:"canada-type-gibson";
+    font-size: 94px;
+    font-weight: 600;
+    letter-spacing: -23;
+    margin-right: 8px; /* doesnt specify distance but design has space*/
+    color: #204566;
+}
+
+.Hero-section-thrive {
+    font-family:"canada-type-gibson";
+    font-size: 94px;
+    font-style:italic;
+    font-weight: 600;
+    letter-spacing: -23;
+    color: #569DC1;
+}
+
+.Hero-section div p {
+    font-family: 'Montserrat';
+    font-size: 23px;
+    font-weight: 600; /* Medium font but 400 looks too light*/
+    color: #3B7BA3;
+    max-width: 586.61px;
+    width: auto;
+    height: auto;
+    margin-top: 64px;
+    line-height: 30px;
+}
+
+.Hero-section div button {
+    width: 240.79px;
+    height: 59.04px;
+    border-style: none;
+    background-color: #569DC1;
+    font-size: 25px;
+    font-family:"canada-type-gibson";
+    font-weight: 600;
+    color: white;
+    margin-top: 60px;
+}
+
+.Illustration-image {
+    max-width: 879.04px;
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .Nav-hamburger {
+        display: block;
+    }
+    .Nav-section ul {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1768px) {
+    .Hero-section-container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        max-width: 1672px;
+        width: 88%;
+        margin: 0 auto;
+        margin-top: 167px;
+    }
+    .Hero-section-container-section:first-child{
+        margin-right: 0px;
+    }
+}
+
+
+
+
+
+
