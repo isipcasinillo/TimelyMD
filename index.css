@@ -4,8 +4,6 @@
     margin: 0;
 }
 
-
-
 .Nav-section {
     top: 58.4px; 
     left: 50%;
@@ -70,6 +68,7 @@
     
     margin: 0 auto;
     margin-top: 167px;
+    padding-bottom: 65px;
 
 }
 
@@ -130,6 +129,64 @@
     height: auto;
 }
 
+/* ----------------------------------------------------------------- */
+
+
+.Solution-cards {
+    max-width: 1672px;
+    width: 88%;
+    height: auto;
+    
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+ 
+    padding-top: 102.5px;
+    padding-bottom: 102.5px;
+    margin: 0 auto;
+    margin-top: -42px;
+    background-color: #204566;
+}
+
+.Solution-cards-paragraph {
+    font-size:  38px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: white;
+
+}
+
+.Solution-cards-button {
+    background-color: #F4BD51;
+    height: 59.04px;
+    width: 240.79px;
+
+    border-style: none;
+    font-size: 25.46px;
+    font-weight: 600;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- */
 
 @media only screen and (max-width: 1280px) {
     .Nav-hamburger {
@@ -137,6 +194,15 @@
     }
     .Nav-section ul {
         display: none;
+    }
+    .Solution-cards{
+        justify-content: flex-start;
+    }
+    .Solution-cards-button{
+        margin-left: 40px;
+    }
+    .Solution-cards-paragraph {
+        margin: 40px;
     }
 }
 @media only screen and (max-width: 1768px) {
@@ -155,7 +221,17 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
 
+    .Solution-cards-button{
+        width: 320px;
+    }
+    .Solution-cards-button{
+        margin-left: 0px;
+        margin: 0 auto;
+        width: 85%;
+    }
+}
 
 
 
