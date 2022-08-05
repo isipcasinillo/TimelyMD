@@ -271,6 +271,84 @@
 }
 
 /* ----------------------------------------------------------------- */
+.Netowork-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 434px;
+}
+.Network-cta-main {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    max-width: 1670px;
+    width: 100%;
+}
+.Network-cta-container {
+    margin-top: 246.2px;
+    width: 973px;
+    height: 343px;
+    background-color: #569DC1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 75.8px;
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    top:-84px;
+}
+
+.Network-cta-header{
+    font-family: 'Montserrat';
+    font-size: 38px;
+    font-weight: 700;
+    color:#FFFFFF;
+    margin-bottom: 65px;
+    letter-spacing: 1px;
+}
+
+.Network-cta-buttons {
+    display: flex;
+    width: auto;
+
+}
+
+.Network-button-partner {
+    width: 281.79px;
+    height: 59.04px;
+    text-align: start;
+    padding-left: 35.9px;
+    background-color: #20456600;
+    box-shadow: inset 0px 0px 0px 2.5px #F4BD51;
+    border-style: solid;
+    border-color: #F4BD51;
+    font-size: 25.46px;
+    color: white;
+    margin-right: 44.2px;
+}
+
+.Network-button-join {
+    width: 281.79px;
+    height: 59.04px;
+    color: white;
+    background-color: #F4BD51;
+    font-size: 25.46px;
+    border-style: none;
+    text-align: start;
+    padding-left: 24.9px;
+    
+}
+
+.Network-illustration-image {
+    max-width: 774.43px;
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* ----------------------------------------------------------------- */
 
 @media only screen and (max-width: 1280px) {
     .Nav-hamburger {
@@ -324,8 +402,47 @@
         margin-bottom: 32px;
 
     }
+    .Network-cta-header {
+        text-align: center;
+        margin-top: 65px;
+    }
+    .Network-cta-buttons {
+        flex-direction: column;
+        align-items: center
+    }
+    .Network-button-partner{
+        margin-right: 0px;
+    }
+    .Network-cta-container {
+        align-items: center;
+        padding-left: 0px;
+        height: auto;
+        padding-bottom: 65px;
+    }
+    .Network-button-join {
+        margin-top: 23px;
+    }
 }
 
+@media only screen and (max-width: 1676px) {
+  .Network-cta-container{
+    position:relative;
+    z-index: 0;
+    max-width: 973px;
+    width: 100%;
+    
+  }
+  .Network-cta-main{
+    /* margin-top: 200px; */
+    position:relative;
+    flex-direction: column;
+    align-items: center
+  }
+
+  .Netowork-wrapper {
+    margin-top: 100px;
+  }
+}
 
 
 
